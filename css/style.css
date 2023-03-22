@@ -1,0 +1,314 @@
+@font-face {
+  font-family: Lato;
+  src: url(../font/Lato.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+/*header*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#float-right {
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#logo-img {
+  width: 20px;
+}
+
+.logo {
+  margin-top: -10px;
+}
+
+/* Front page */
+
+.frontpage-img {
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/*section biography*/
+
+.biography {
+  background-color: #504f4f;
+  padding: 20px;
+}
+
+.biography h1 {
+  text-align: center;
+}
+
+.biography p {
+  margin: 10px;
+  text-indent: 20px;
+}
+
+/*section discography*/
+.photos img,
+.tours img {
+  width: 80%;
+  position: relative;
+  left: 40px;
+}
+
+.album img {
+  border-radius: 30px;
+  box-shadow: 0 0 5px 2px white;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  right: 15%;
+}
+
+.discography {
+  padding: 0;
+  background-color: #504f4f;
+}
+.row {
+  margin-bottom: 40px;
+}
+.album {
+  padding: 30px;
+}
+
+.album:hover,
+.photos img:hover,
+.concert:hover {
+  border: 1px solid white;
+}
+
+.album-desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*section contacts*/
+
+.contacts {
+  margin: 50px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../pictures/photo1.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contacts h1 {
+  padding-bottom: 20px;
+}
+
+.contacts p {
+  padding-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-group {
+  position: relative;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  outline: 0;
+  border: 1px solid white;
+  color: #fff;
+  background: transparent;
+  font-size: 18px;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  padding: 10px;
+  cursor: text;
+  transition: 0.2s;
+}
+
+button {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  left: -130px;
+  font-size: 18px;
+}
+
+textarea:focus ~ label,
+textarea:active ~ label {
+  left: -130px;
+  font-size: 18px;
+}
+
+/*footer*/
+
+.social_media {
+  text-align: center;
+  padding: 20px;
+}
+
+.social_media_icon {
+  text-decoration: none;
+  padding: 20px;
+  color: #f4f4f4;
+  font-size: 22px;
+}
+
+footer {
+  background-color: #333;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  align-items: center;
+}
